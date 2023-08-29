@@ -141,5 +141,5 @@ if DEBUG:
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://tinyy'
+    'https://tinyy.up.railway.app'
 ]
