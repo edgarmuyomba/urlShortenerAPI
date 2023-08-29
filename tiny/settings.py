@@ -138,6 +138,7 @@ CORS_ALLOWED_ORIGINS = []
 
 if DEBUG:
     CORS_ALLOWED_ORIGINS += ['http://localhost:8001']
+    CORS_ALLOWED_ORIGINS += ['https://edgarmuyomba.github.io/tinyUrl/']
 
 
 CSRF_TRUSTED_ORIGINS = [
