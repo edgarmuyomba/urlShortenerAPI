@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -137,3 +138,8 @@ CORS_ALLOWED_ORIGINS = []
 
 if DEBUG:
     CORS_ALLOWED_ORIGINS += ['http://localhost:8001']
+
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://tiny'
+]
