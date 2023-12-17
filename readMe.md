@@ -36,13 +36,13 @@ This project is a URL shortener API built using Django Rest Framework. The API a
 - `POST /api/shorten/`
     - Description: Submit a URL to be shortened.
     - Request Body:
-    ```bash
+    ```
     {
         "source": "https://www.example.com/long-url"
     }
     ```
     - Reponse
-    ```bash
+    ```
     {
         "tiny": "http://127.0.0.1:8000/<int>/"
     }
@@ -52,7 +52,7 @@ This project is a URL shortener API built using Django Rest Framework. The API a
 
 ## CORS Configuration
 The project uses `django-cors-headers` to manage cross-origin resource sharing. By default, the CORS configuration allows requests from all origins. You can modify the `CORS_ALLOW_ALL_ORIGINS` setting in settings.py to restrict access to specific origins
-```bash
+```
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8001",
